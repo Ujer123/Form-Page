@@ -9,21 +9,27 @@
 <body>
     <h1 class="header">SIMPLE CONTACT FORM</h1>
 
-    <form class="center" >
+    <form action="home.html" class="center" method="post" onsubmit="return validate()" >
         <label>First Name</label><br>
-        <input class="abc" type="text" id="fname" name="firstname"placeholder="First Name"><br><br>
+        <input class="abc" type="text" id="fname" name="firstname" placeholder="First Name"><br>
+        <span id="user"></span><br>
     
-        <label>Last Name</label><br>
-        <input class="abc" type="text" id="lname" name="Last Name" placeholder="last name"><br><br>
+        <label>Password</label><br>
+        <input class="abc" type="text" id="password" name="password" placeholder="last name"><br>
+        <span id="pass"></span><br>
+
+        <label>confirmPassword</label><br>
+        <input class="abc" type="city" id="confirmpassword" placeholder="City"><br>
+        <span id="cpass"></span><br>
 
         <label>Phone Number</label><br>
-        <input class="abc" type="number" id="number"placeholder="Phone number"><br><br>
+        <input class="abc" type="number" id="mnumber" placeholder="Phone number"><br>
+        <span id="number"></span><br>
 
         <label>EMAIL</label><br>
-        <input class="abc" type="email" id="email" placeholder="Email"><br><br>
+        <input class="abc" type="email" id="email" placeholder="Email"><br>
+        <span id="mail"></span><br>
 
-        <label>CITY</label><br>
-        <input class="abc" type="city" id="city" placeholder="City"><br><br>
 
         <label>MESSAGE</label><br>
         <textarea style="width: 100%;" name="text" placeholder="Enter Message...." id="MESSAGE" cols="50" rows="10"></textarea>
@@ -32,5 +38,7 @@
 
     </form>
     <h1 class="last">@2016 Simple Contact Form. All Rights Reseved | Desgin by Ujer</h1>
+
+    <script src="script.js"></script>
 </body>
 </html>
